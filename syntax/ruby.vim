@@ -264,7 +264,7 @@ if !exists("ruby_no_special_methods")
   syn match   rubyControl   "\<\%(exit!\|\%(abort\|at_exit\|exit\|fork\|loop\|trap\)\>[?!]\@!\)"
   syn keyword rubyEval	    eval class_eval instance_eval module_eval
   syn keyword rubySend	    send __send__ public_send
-  syn keyword rubyCollection collect collect_concat detect inject reject select each flat_map
+  syn keyword rubyCollection collect collect_concat cycle detect drop drop_while each each_cons each_entry each_slice each_with_index each_with_object find find_all find_index first flat_map grep group_by inject lazy map max max_by min min_by minmax minmax_by partition reduce reject reverse_each select slice_before sort sort_by take take_while zip
   syn keyword rubyException raise fail catch throw
   " false positive with 'include?'
   syn match   rubyInclude   "\<include\>[?!]\@!"
